@@ -10,11 +10,11 @@ html {
 }
  
 body {
-  font: 500 1.6rem/1.6 "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   background: #fff;
   color: #4c4c4c;
+  font: 500 1.6rem/1.6 "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
- 
+
 ul {
   list-style: none;
 }
@@ -29,7 +29,7 @@ form label {
 }
  
 a {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: #4c4c4c;
 }
 
@@ -70,12 +70,39 @@ h6 {
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  h2 {
+    font-size: 3.3rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 2.0rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+  }
+}
+
 .container{
   margin-right: auto;
   margin-left: auto;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 960px;
 }
 
 .row {
@@ -409,11 +436,32 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border: solid 1px #ddd;
   border-radius: 3px;
   font-size: 1em;
-  margin-bottom: 0.5em;
   padding: 4px;
 }
 
 input[type="file"] {
   font-size: 1em;
-  margin-bottom: 0.5em;
 }
+
+select {
+  background: #fff;
+  height: 3.3rem;
+}
+
+
+table {
+  max-width: 100%;
+  background-color: #fff;
+}
+
+th {
+  border: solid 1px #eee;
+  border-bottom: solid 1px #ccc;
+  padding: 8px;
+}
+
+td {
+  border: solid 1px #eee;
+  padding: 8px;
+}
+

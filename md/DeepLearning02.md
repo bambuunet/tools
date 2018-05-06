@@ -3,7 +3,7 @@
 ### Learning data
 
 div.row
-  table.col.s12.m6
+  table
     tr
       th input1
       th input2
@@ -15,8 +15,27 @@ div.row
         select
           option(value="0"selected="selected") 0
           option(value="1") 1
-
-
+    tr
+      td 0
+      td 1
+      td
+        select
+          option(value="0") 0
+          option(value="1"selected="selected") 1
+    tr
+      td 1
+      td 0
+      td
+        select
+          option(value="0") 0
+          option(value="1"selected="selected") 1
+    tr
+      td 1
+      td 1
+      td
+        select
+          option(value="0"selected="selected") 0
+          option(value="1") 1
 
 script
   

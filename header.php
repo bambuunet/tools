@@ -26,9 +26,13 @@
     <title>@bambuu</title>
 
     <style>
-      h1, h2, h3, h4, h5, h6{
+      h1, h2, h3, h4, h5, h6 {
         font-family: 'Khand', sans-serif;
-        letter-spacing: 0;
+        letter-spacing: 0em;
+      }
+      footer {
+        border-top: solid 1px #eee;
+        margin: 20px 0 20px 0;
       }
     </style>
   </head>
