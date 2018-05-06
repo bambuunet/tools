@@ -1,6 +1,6 @@
 /*ﾟ･*:.｡..｡.:*･ﾟ ﾟ･*:.｡..｡.:*･ﾟ ﾟ･*:.｡..｡.:*･ﾟ ﾟ･*:.｡..｡.:*･ﾟ
 
-  Olelo 1.0.2
+  Olelo 1.0.5
   Olelo markdown files as html.
 
   Copyright 2018- Ringo Takemura
@@ -109,7 +109,6 @@ var Olelo = function(filepath, id){
       i++;
       if(i >= mdArray.length) break;
       var line = mdArray[i]+'\n';
-
       var indent2 = getIndent(line, baseIndent);
       //end
       if(indent2 <= indent && line.match(/[^\s\n]+/)){
@@ -396,6 +395,7 @@ var Olelo = function(filepath, id){
 
   function getText(line, isNotTag){
     line = line.replace(/^\s*/, '');
+    line = line.replace(/^[^)]+"\s[^)]+(?=\)\s)/g, '"');//delete space in (attr="attr" attr="attr")
     var text = '';
     if(isNotTag){
       text = line;
@@ -418,7 +418,7 @@ var Olelo = function(filepath, id){
     text = text.replace(/(^|\s+)\/\/(.*)/, '<!-- $2 -->');
 
     //img#aaa.bbb.ccc => <img id="aaa" class="bbb ccc">
-    text = text.replace(/\[([\w\#\-]+)\.([\w\.\-]*)\(/g, '[$1(class="$2"').replace(/\[(\w+)\#([\w\-]+)\(/, '[$1(id="$2"').replace(/class="[\w\-\.]+/g, function(){
+    text = text.replace(/\[([\w\#\-]+)\.([\w\.\-]*)\(/g, '[$1(class="$2"').replace(/\[([\w\#\-]+)\.([\w\.\-]*)/g, '[$1(class="$2")').replace(/\[(\w+)\#([\w\-]+)\(/, '[$1(id="$2"').replace(/\[(\w+)\#([\w\-]+)/, '[$1(id="$2")').replace(/class="[\w\-\.]+/g, function(){
       return arguments[0].replace(/\./g, ' ');
     });;
 
@@ -433,6 +433,10 @@ var Olelo = function(filepath, id){
     //i, b...
     //[i text]
     text = text.replace(/\[(\w+) ([^\]]+)\]/g, '<$1>$2</$1>');
+
+    //span...
+    //[span]
+    text = text.replace(/\[(\w+)\]/g, '<$1></$1>');
 
     return text;
   }
@@ -462,7 +466,7 @@ var Olelo = function(filepath, id){
     }
 
     //div type
-    if(line.match(/^(\.|#)\w+/)){
+    if(line.match(/^(\.|#)[^\s#]/)){
       return 'div';
     }
 

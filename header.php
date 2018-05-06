@@ -30,10 +30,6 @@
         font-family: 'Khand', sans-serif;
         letter-spacing: 0em;
       }
-      footer {
-        border-top: solid 1px #eee;
-        margin: 20px 0 20px 0;
-      }
     </style>
   </head>
   <body>
