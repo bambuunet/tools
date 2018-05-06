@@ -11,7 +11,7 @@
       gtag('config', 'UA-109853225-1');
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Khand:300" rel="stylesheet">
     
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -26,17 +26,9 @@
     <title>@bambuu</title>
 
     <style>
-      body{
-        font: 400 1.4rem/1.6 "Open Sans", "-apple-system", "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "メイリオ", Meiryo, sans-serif !important;
-        letter-spacing: 0.1rem;
-      }
       h1, h2, h3, h4, h5, h6{
         font-family: 'Khand', sans-serif;
         letter-spacing: 0;
-      }
-      input, label{
-        font-size: 1rem;
-        
       }
     </style>
   </head>

@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  font-size: 62.5%;
+}
+ 
+body {
+  font: 500 1.6rem/1.6 "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  background: #fff;
+  color: #4c4c4c;
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+ 
+form label {
+  cursor: pointer;
+}
+ 
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+a:hover, a:active, a:focus {
+  color: #b2b2b2;
+}
+ 
+a img {
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1em;
+  padding-bottom: 0.38em;
+}
+
+h1 {
+  font-size: 6.8rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+h5 {
+  font-size: 2.0rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  display: table;
+  margin-bottom: 0.5rem; 
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.row:after{
+  clear: left;
+}
+
+.col-gold-s {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 38.22%;
+}
+
+.col-gold-l {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 61.78%;
+}
+
+.col1 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 8.333%;
+}
+
+.col2 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 16.667%;
+}
+
+.col3 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 25%;
+}
+
+.col4 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 33.333%;
+}
+
+.col5 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 41.667%;
+}
+
+.col6 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 50%;
+}
+
+.col7 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 58.333%;
+}
+
+.col8 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 66.667%;
+}
+
+.col9 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 75%;
+}
+
+.col10 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 83.333%;
+}
+
+.col11 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 91.667%;
+}
+
+.col12 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .sp-gold-s {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 38.22%;
+  }
+
+  .sp-gold-l {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 61.78%;
+  }
+
+  .sp1 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 8.3%;
+  }
+
+  .sp2 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 16.6%;
+  }
+
+  .sp3 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 25%;
+  }
+
+  .sp4 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 33.3%;
+  }
+
+  .sp5 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 41.667%;
+  }
+
+  .sp6 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .sp7 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 58.333%;
+  }
+
+  .sp8 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 66.667%;
+  }
+
+  .sp9 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 75%;
+  }
+
+  .sp10 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 83.333%;
+  }
+
+  .sp11 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 91.667%;
+  }
+
+  .sp12 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pc-gold-s {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 38.22%;
+  }
+
+  .pc-gold-l {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 61.78%;
+  }
+
+  .pc1 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 8.333%;
+  }
+
+  .pc2 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 16.667%;
+  }
+
+  .pc3 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 25%;
+  }
+
+  .pc4 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 33.333%;
+  }
+
+  .pc5 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 41.667%;
+  }
+
+  .pc6 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .pc7 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 58.333%;
+  }
+
+  .pc8 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 66.667%;
+  }
+
+  .pc9 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 75%;
+  }
+
+  .pc10 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 83.333%;
+  }
+
+  .pc11 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 91.667%;
+  }
+
+  .pc12 {
+    display: block;
+    float: left;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+button, input[type="submit"], input[type="button"] {
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+  display: block;
+  min-width: 120px;
+  padding: 8px 16px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  line-height: 1.4em;
+  text-align: center;
+  text-decoration: none;
+  background: #7f94ff;
+  color: #fff;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="color"], input[type="url"], select, textarea {
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding: 4px;
+}
+
+input[type="file"] {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}

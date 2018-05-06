@@ -269,11 +269,11 @@ var Escss = function(hash){
     //ex c#000
     var propertyKey = clsExcludePrefix.match(/^[a-zA-Z]+/);
     var property = this.RULE_OF_COLOR[propertyKey];
-    var val = clsExcludePrefix.replace(propertyKey, '').replace('#', '');
-    
+    var val = clsExcludePrefix.replace(propertyKey, '');
+
     if(val.match(/^\#[\da-fA-F]{3}$/)) return property + val ;
     if(val.match(/^\#[\da-fA-F]{6}$/)) return property + val ;
-    return property + this.COLOR[val];
+    return property + this.COLOR[val.replace('#', '')];
   }
 
   this.makeStyleOfCondition = function(clsExcludePrefix){

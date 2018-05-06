@@ -1,34 +1,35 @@
 # Online Easy Grid
 
 .row
-  h4.col.s12.m4 Grid 1st : 
-  .col.s12.m8
-    p.row
-      label.col.s3.m3(for="inputGrid") size(px)
-      [input.col.s9.m3(id="inputGrid"type="text"maxlength="3"value="10")]
-    p.row
-      label.col.s3.m3(for="inputColor") color
-      [input.col.s9.m3(id="inputColor"type="color"maxlength="7"value="#ccdddd")]
+  h3.sp12.pc-gold-s Grid 1st : 
+  .sp12.pc-gold-l
+    .row
+      label.sp-gold-s.pc3(for="inputGrid") size(px)
+      .sp-gold-l.pc3 [input(id="inputGrid"type="text"maxlength="3"value="10")]
+    .row
+      label.sp-gold-s.pc3(for="inputColor") color
+      .sp-gold-l.pc3 [input(id="inputColor"type="color"maxlength="7"value="#ccdddd")]
 .row
-  h4.col.s12.m4 Grid 2nd : 
-  .col.s12.m8
-    p.row
-      label.col.s3.m3(for="inputGrid2") size(px)
-      [input.col.s9.m3(id="inputGrid2"type="text"maxlength="3"value="100")]
-    p.row
-      label.col.s3.m3(for="inputColor2") color
-      [input.col.s9.m3(id="inputColor2"type="color"maxlength="7"value="#66dddd")]
+  h3.sp12.pc-gold-s Grid 2nd : 
+  .sp12.pc-gold-l
+    .row
+      label.sp-gold-s.pc3(for="inputGrid2") size(px)
+      .sp-gold-l.pc3 [input(id="inputGrid2"type="text"maxlength="3"value="100")]
+    .row
+      label.sp-gold-s.pc3(for="inputColor2") color
+      .sp-gold-l.pc3 [input(id="inputColor2"type="color"maxlength="7"value="#66dddd")]
 .row
-  h4.col.s12.m4 Image file : 
-  .col.s12.m8
-    p.row
-      [input.col.s9.m12(id="inputFile"type="file"accept="image/*")]
+  h3.sp-gold-s.pc-gold-s Image file : 
+  .sp-gold-l.pc-gold-l
+    .row
+      .sp-gold-l.pc12 [input(id="inputFile"type="file"accept="image/*")]
 .row
   [input.center.col.s12.m4.btn(id="inputPrev"type="button"value="Preview")]
 
 #wrap(style="position:relative;overflow:scroll")
   img#prevImg
   #prevGrid(style="position:absolute;top:0")
+
 
 
 script
