@@ -9,7 +9,7 @@
         th input2
         th output
         th learn
-      tr
+      tr.*bg#fcd4dd
         td 0
         td 0
         td
@@ -60,13 +60,21 @@
       .*w80.*h50.*center.*bd#ccc.*mt10
         div Threshold
         #learn_input2 -1.0
-    .*w130.*l80.*absolute Hidden layer
+    .*w40.*l40.*absolute 
+    .*w100.*l120.*absolute Hidden layer
       .*w100.*center.*bd#ccc
         div 0 * [span#neuron0]
         div +
         div 0 * [span] [span#neuron1]
         div +
         div -1.0 * [span#neuron2()]
+        div =
+        div 
+      .sigmoid
+        #sigmoid
+    .*w40.*l220.*absolute
+    .*w130.*l260.*absolute Output layer
+
 
 .pc12.sp12
   ### Neuron status
@@ -82,7 +90,7 @@
 script
   var INPUT_NO = 2;
   var LEARNING_RATE = 1;
-  var MAX_COUNT = 1;
+  var MAX_COUNT = 10;
   var INIT_ERROR = 100;
   var LIMIT_ERROR = 0.01;
   var INPUT_DATA = [
@@ -93,13 +101,12 @@ script
   ];
   var OUTPUT_DATA = [];
   var OUTPUT_NODES = [];
-  var THRESHOLD = -1.0;
+  var THRESHOLD = -0.0;
 
   function main(){
     //重みの初期化
     initOutputWeight();
     printWeight();
-    console.log(OUTPUT_NODES);
 
     //学習データの読み込み
     getLearningData();
@@ -163,7 +170,8 @@ script
       if($$('#neuron' + String(i)).length == 0){
         break;
       }
-      $$('#neuron' + String(i)).text(OUTPUT_NODES[i]);
+      var nodeVal = Math.round(OUTPUT_NODES[i] * 1000) / 1000;
+      $$('#neuron' + String(i)).text(nodeVal);
       i++;
     }
     return;
@@ -185,7 +193,13 @@ script
 
   $$(window).on('load', function(){
     main();
+
+    $$('#learn').on('click', function(){
+      console.log('a');
+    });
   });
+
+
 
 
   
