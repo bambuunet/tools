@@ -14,6 +14,7 @@
       [img(src="/img/artists/MikikoHirayama/m01.jpg"style="max-height:432px;max-width:315px")]
 #slideTitle.*center Exhibition 2017
 
+
 script
   $$(window).on('load', function(){
 
@@ -34,3 +35,4 @@ script
       },
     });
   });
+
